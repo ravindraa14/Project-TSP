@@ -1,0 +1,108 @@
+#include<graphics.h>
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<dos.h>
+#include<string.h>
+void flow()
+{
+cleardevice();
+setcolor(WHITE);
+settextstyle(1,0,1);
+outtextxy(95,10,"FLOW CHART FOR TRAVELLING SALESMAN PROBLEM");
+delay(1000);
+line(250,40,350,40); arc(350,55,255,450,15);
+line(250,70,350,70); arc(250,55,435,285,15);
+rectangle(200,90,400,130);rectangle(210,165,395,210);
+rectangle(220,235,390,265);
+line(300,290,250,320);line(300,290,355,320);
+line(250,320,300,350);line(300,350,355,320);
+rectangle(210,370,395,400);
+line(300,420,350,450);line(300,420,250,450);
+line(300,480,350,450);line(300,480,250,450);
+line(70,435,170,435); arc(170,450,255,450,15);
+line(70,465,170,465); arc(70,450,435,285,15);
+settextstyle(2,0,5);
+setcolor(RED);
+outtextxy(300,68,"|");outtextxy(300,75,"|");
+outtextxy(294,77,"\\/");
+outtextxy(300,128,"|");outtextxy(300,135,"|");outtextxy(300,143,"|");
+outtextxy(300,143,"|");outtextxy(300,150,"|");outtextxy(294,152,"\\/");
+outtextxy(300,208,"|");outtextxy(300,215,"|");outtextxy(300,220,"|");
+outtextxy(294,222,"\\/");
+outtextxy(300,263,"|");outtextxy(300,270,"|");outtextxy(300,275,"|");
+outtextxy(294,277,"\\/");
+outtextxy(300,345,"|");outtextxy(300,353,"|");outtextxy(300,355,"|");
+outtextxy(294,356,"\\/");
+outtextxy(300,397,"|");outtextxy(300,404,"|");outtextxy(300,405,"|");
+outtextxy(294,407,"\\/");
+line(120,190,208,190);line(120,190,120,320);line(120,320,250,320);
+outtextxy(205,182,">");
+line(397,190,500,190);line(500,190,500,450);line(500,450,350,450);
+outtextxy(397,182,"<");
+line(185,450,250,450);outtextxy(185,442,"<");
+setcolor(GREEN);
+outtextxy(270,47,"Initialize");
+outtextxy(210,93,"Places salesman to visit");outtextxy(260,106,"nearest city");
+outtextxy(225,170,"Travers to each city ");
+outtextxy(240,185,"with minimum cost");outtextxy(250,240,"Choose next city");
+outtextxy(285,300,"More");outtextxy(280,315,"Cities?");
+outtextxy(225,375,"Calculate Minimum cost");
+outtextxy(285,430,"Need");outtextxy(260,443,"Optimization");
+outtextxy(70,440,"Stop initialize");
+setcolor(WHITE);
+outtextxy(230,435,"NO");
+outtextxy(125,250,"YES");outtextxy(475,320,"YES");outtextxy(310,345,"NO");
+getch();
+delay(500);
+cleardevice();
+settextstyle(1,0,1);
+outtextxy(200,5,"Project Working Flow Chart");
+line(250,40,350,40); arc(350,55,255,450,15);
+line(250,70,350,70); arc(250,55,435,285,15);
+rectangle(250,90,350,130);rectangle(450,90,550,130);
+line(300,160,250,190);line(300,160,355,190);
+line(250,190,300,220);line(300,220,355,190);
+line(300,250,355,280);line(300,250,255,280);
+line(355,280,300,310);line(300,310,255,280);
+rectangle(40,350,120,380);rectangle(150,350,230,380);
+rectangle(260,350,350,380);rectangle(370,350,450,380);
+rectangle(480,350,560,380);
+settextstyle(2,0,5);
+setcolor(RED);
+line(352,110,448,110);line(545,132,545,348);
+outtextxy(446,102,">");outtextxy(539,337,"\\/");
+outtextxy(300,68,"|");outtextxy(300,75,"|");
+outtextxy(294,77,"\\/");
+outtextxy(300,127,"|");outtextxy(300,134,"|");
+outtextxy(300,140,"|");outtextxy(300,147,"|");
+outtextxy(294,147,"\\/");
+line(355,190,465,190);line(465,190,465,132);
+outtextxy(355,182,"<");
+outtextxy(300,217,"|");outtextxy(300,224,"|");
+outtextxy(300,230,"|");outtextxy(300,237,"|");
+outtextxy(294,237,"\\/");
+outtextxy(300,307,"|");outtextxy(300,314,"|");
+outtextxy(300,321,"|");//outtextxy(294,321,"\\/");
+outtextxy(300,330,"|");outtextxy(300,337,"|");
+outtextxy(80,330,"|");outtextxy(80,337,"|");
+outtextxy(190,330,"|");outtextxy(190,337,"|");
+outtextxy(410,330,"|");outtextxy(410,337,"|");
+outtextxy(520,330,"|");outtextxy(520,337,"|");
+line(80,333,520,333);outtextxy(293,305,"\/\\");
+outtextxy(294,337,"\\/");outtextxy(73,337,"\\/");
+outtextxy(183,337,"\\/");outtextxy(404,337,"\\/");
+outtextxy(514,337,"\\/");
+setcolor(GREEN);
+outtextxy(255,47,"Welcome page");outtextxy(265,100,"Login page");
+outtextxy(267,180,"Main Menu");outtextxy(285,260,"Make");
+outtextxy(275,275,"Choice?");
+outtextxy(42,355,"Application");outtextxy(157,355,"Algorithm");
+outtextxy(267,355,"Flow chart");outtextxy(383,355,"Working");
+outtextxy(507,355,"Exit");outtextxy(460,95,"After three");
+outtextxy(470,110,"Attempts");
+setcolor(WHITE);
+outtextxy(260,135,"TRUE");outtextxy(390,95,"FALSE");
+outtextxy(500,250,"FALSE");outtextxy(430,165,"TRUE");
+getch();
+}
